@@ -28,7 +28,8 @@
     padding:10px 5px 10px 4px;
     margin: auto;
     
-    float: left;
+  position: absolute;
+  top: 5px;
    /* font-family: 'Concert One', cursive;*/
     
     
@@ -96,20 +97,25 @@
     color:wheat;
 
 padding: 20px 20px 20px 20px;
-display: inline-block;
-box-sizing:content-box;
-display: flex;
+/* display: inline-block; */
+/* box-sizing:content-box; */
+/* display: flex; */
 
 
 }
 .box{
     /* border: 4px solid black; */
     /* background-color: grey; */
-    margin: 4px 0px;
-    padding: 23px;
+    margin: 50px;
+    padding: 50px;
     width: 50%;
-    box-sizing: border-box;
-    display: inline-block;
+    /* box-sizing: border-box; */
+    /* display: inline-block; */
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    /* align-content: center; */
+    border: 2px;
+    border-color: black;
 }
 
 .box img:hover, .box button#bt1:hover{
@@ -119,17 +125,23 @@ display: flex;
     
 }
 .buse{
-    margin: 50px;
-    padding: 50px;
-    width: 50%;
-    box-sizing: border-box;
-    display: inline-block;
+    margin-top: 150px;
+    padding: 14px;
+    width: 80%;
+    border: 2px;
+    border-color: black;
+    /* box-sizing: border-box; */
+    /* display: inline-block;*/
+
 }
-img{
-margin: auto;
-            display: block;
-            width: 500px;
-}
+/* img{
+/* margin: auto; */
+            /* display: block; */
+            /* border: 10px;
+    border-color: black;
+    border-style: double;
+            width: 500px; */ 
+/* } */
 
 #bt1{
      margin: 20px;
@@ -162,15 +174,14 @@ color: rgb(0, 0, 0);
 </style>
 
 <body>
-    <header>
     
-        <!--the heading-->
+   <p>     <!--the heading-->
         <div class="first">
             <div class="ch">   
-                <ul>   
-               <li> <a href="https://aye0013.github.io/menufinal/" ><h1 id="ch1">Menu</h1></a></li>
+                <!-- <ul>    -->
+               <li> <a href="/menu.html" ><h1 id="ch1">Menu</h1></a></li>
                <li> <a href=""><h1 id="ch2">Your Collections</h1></a></li>
-                </ul>
+                <!-- </ul> -->
             </div>
         
         </div>
@@ -185,73 +196,70 @@ color: rgb(0, 0, 0);
          </table>
 
         </div>
-
-        <div class="nav">
-
-        </div>
-
-        <div class="btn1">
-
-        </div>
+        </p>
 
         
+<p>
+        
         <div class="box">
-            <ul type="circle">
+           
            
             <div class="buse">
                
-       <li> <a href="https://booksameya.in/book-review-harry-potter-and-the-philosophers-stone-by-j-k-rowling/" target="_blank"> <img src="image/hp1.jpg" height="700px" width="500px"></a></li>
+       <a href="https://booksameya.in/book-review-harry-potter-and-the-philosophers-stone-by-j-k-rowling/" target="_blank"> <img src="image/hp1.jpg" height="700px" width="500px"></a>
            <!--q nae horaaaaaaaaa-->         
-          <li> <a href="https://booksameya.in/book-review-harry-potter-and-the-philosophers-stone-by-j-k-rowling/" target="_blank" >  <button id="bt1">Read Review</button></a>
-           <a href="" >  <button id="bt1">Save tO yOUR Collection</button></a></tr></li>
+          <a href="https://booksameya.in/book-review-harry-potter-and-the-philosophers-stone-by-j-k-rowling/" target="_blank" >  <button id="bt1">Read Review</button></a>
+           <a href="" >  <button id="bt1">Save tO yOUR Collection</button></a></tr>
             </div>
 <hr>
        
    
             <div class="buse">
                 
-              <li>  <a href="https://booksatruestory.com/2013/05/16/book-review-harry-potter-chamber-secrets-j-k-rowling/"> <img src="image/hp2.jpg" height="700px" width="500px" id="mg"></a></li>
+               <a href="https://booksatruestory.com/2013/05/16/book-review-harry-potter-chamber-secrets-j-k-rowling/"> <img src="image/hp2.jpg" height="700px" width="500px" id="mg"></a>
                 <!--q nae horaaaaaaaaa-->
-                <li><a href="https://booksatruestory.com/2013/05/16/book-review-harry-potter-chamber-secrets-j-k-rowling/" target="_blank">  <button id="bt1">Read Review</button></a>
-                <a href="" target="_blank" >  <button id="bt1">Save tO yOUR Collection</button></a></li>
+                <a href="https://booksatruestory.com/2013/05/16/book-review-harry-potter-chamber-secrets-j-k-rowling/" target="_blank">  <button id="bt1">Read Review</button></a>
+                <a href="" target="_blank" >  <button id="bt1">Save tO yOUR Collection</button></a>
             </div>
 
 <hr>
             <div class="buse">
                 
-               <li>  <a href="https://www.goodreads.com/book/show/13335037-divergent"> <img src="image/d1.jpg" height="700px" width="500px" id="mg"></a></li>
+                <a href="https://www.goodreads.com/book/show/13335037-divergent"> <img src="image/d1.jpg" height="700px" width="500px" id="mg"></a>
                   <!--q nae horaaaaaaaaa-->
-                 <li> <a href="https://www.goodreads.com/book/show/13335037-divergent" target="_blank">  <button id="bt1">Read Review</button></a>
-                  <a href="" target="_blank" >  <button id="bt1">Save tO yOUR Collection</button></a></li>
+                  <a href="https://www.goodreads.com/book/show/13335037-divergent" target="_blank">  <button id="bt1">Read Review</button></a>
+                  <a href="" target="_blank" >  <button id="bt1">Save tO yOUR Collection</button></a>
               </div>
 
 <hr>
               <div class="buse">
                 
-               <li>   <a href="https://www.goodreads.com/book/show/24445517-maybe-someday"> <img src="image/m.jpg" height="700px" width="500px" id="mg"></a></li>
+                <a href="https://www.goodreads.com/book/show/24445517-maybe-someday"> <img src="image/m.jpg" height="700px" width="500px" id="mg"></a>
                   <!--q nae horaaaaaaaaa-->
-                <li> <a href="https://www.goodreads.com/book/show/24445517-maybe-someday" target="_blank">  <button id="bt1">Read Review</button></a>
-                  <a href="" target="_blank" >  <button id="bt1">Save tO yOUR Collection</button></a></li>
+                <a href="https://www.goodreads.com/book/show/24445517-maybe-someday" target="_blank">  <button id="bt1">Read Review</button></a>
+                  <a href="" target="_blank" >  <button id="bt1">Save tO yOUR Collection</button></a>
               </div>
 <hr>
 
               <div class="buse">
                 
-                <li> <a href="https://www.goodreads.com/book/show/56732449-the-love-hypothesis"> <img src="image/l.jpg" height="700px" width="500px" id="mg"></a></li>
+                 <a href="https://www.goodreads.com/book/show/56732449-the-love-hypothesis"> <img src="image/l.jpg" height="700px" width="500px" id="mg"></a></li>
                   <!--q nae horaaaaaaaaa-->
-                <li>  <a href="https://www.goodreads.com/book/show/56732449-the-love-hypothesis" target="_blank">  <button id="bt1">Read Review</button></a>
-                  <a href="" target="_blank" >  <button id="bt1">Save tO yOUR Collection</button></a></li>
+                 <a href="https://www.goodreads.com/book/show/56732449-the-love-hypothesis" target="_blank">  <button id="bt1">Read Review</button></a>
+                  <a href="" target="_blank" >  <button id="bt1">Save tO yOUR Collection</button></a>
               </div>
+        </div>
+        </p>
 <hr>
-              </ul>
+              <!-- </ul> -->
               <!--for buttons-->
 <div class="btn">
   <button id="bt2">
-    <a href="https://aye0013.github.io/bookreview.github.io/"> Back</a>
+    <a href="/index.html"> Back</a>
       
   </button>
         </div>
     
-    </header>
+    
 </body>
 </html>
